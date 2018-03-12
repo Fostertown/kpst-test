@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Type Test</title>
+	<link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.1/normalize.css">
+</head>
+<body>
+
+<style>
+	
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+	
+	@font-face {
+	    font-family: 'pluto_regularregular';
+	    src: url('font/plutoregular-webfont.eot');
+	    src: url('font/plutoregular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('font/plutoregular-webfont.woff') format('woff'),
+	         url('font/plutoregular-webfont.ttf') format('truetype'),
+	         url('font/plutoregular-webfont.svg#pluto_regularregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	body {
+		padding: 20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #444;
+	}
+	
+	h1.new, h2.new, h3.new, h4.new {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: #2f3c61;
+	}
+	
+	h1.new {
+		font-size: 36px;
+		line-height: 48px;
+	}
+	
+	h2.new {
+		font-size: 32px;
+		line-height: 44px;
+	}
+	
+	h3.new {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	
+	h4.new {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	
+	.btn.new {
+		padding: 25px 34px 23px 34px;
+		display: block;
+		border-radius: 4px;
+		font-family: 'Pluto', sans-serif;
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		text-decoration: none;
+		float: left;
+		letter-spacing: .02em;
+		margin: 10px;
+		color: #fff;
+		transition: opacity .2s ease;
+	}
+	
+	.btn.new:hover {
+		opacity: 0.8;
+	}
+	
+	.btn.new:active {
+		opacity: 1;
+	}
+	
+	.green.new {
+		background: #00bb5c; /* Old browsers */
+		background: -moz-linear-gradient(top,  #00bb5c 0%, #00964a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00bb5c), color-stop(100%,#00964a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #00bb5c 0%,#00964a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bb5c', endColorstr='#00964a',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.red.new {
+		background: #d83333; /* Old browsers */
+		background: -moz-linear-gradient(top,  #d83333 0%, #ad2929 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d83333), color-stop(100%,#ad2929)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #d83333 0%,#ad2929 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d83333', endColorstr='#ad2929',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.blue.new {
+		background: #2f3c61; /* Old browsers */
+		background: -moz-linear-gradient(top,  #2f3c61 0%, #26304e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f3c61), color-stop(100%,#26304e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #2f3c61 0%,#26304e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3c61', endColorstr='#26304e',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.lightblue.new {
+		background: #c9d7ff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #c9d7ff 0%, #a1accc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9d7ff), color-stop(100%,#a1accc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #c9d7ff 0%,#a1accc 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d7ff', endColorstr='#a1accc',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.line-green.new {
+		color: #00bb5c;
+		box-shadow: inset 0 0 0 3px #00bb5c;
+		background: rgba(0,187,92, 0.1);
+	}
+	
+	.line-lightblue.new {
+		color: #c9d7ff;
+		box-shadow: inset 0 0 0 3px #c9d7ff;
+		background: rgba(201,215,255, 0.1);
+	}
+	
+	.line-blue.new {
+		color: #2f3c61;
+		box-shadow: inset 0 0 0 3px #2f3c61;
+		background: rgba(47,60,97, 0.1);
+	}
+	
+	.line-red.new {
+		color: #d83333;
+		box-shadow: inset 0 0 0 3px #d83333;
+		background: rgba(216,51,51, 0.1);
+	}
+	
+</style>
+
+	<h1 class="new">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+	<h2 class="new">Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+	<h3 class="new">Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+	<h4 class="new">Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu massa, blandit in congue non, auctor quis elit. Sed fermentum interdum urna, ut sodales lacus imperdiet ac. Ut sit amet sapien at magna auctor faucibus. Mauris purus velit, auctor at massa eget, elementum venenatis sem. Fusce nec nunc sed libero iaculis fringilla commodo nec enim. Fusce hendrerit pretium diam, at dictum orci vulputate in. </p>
+	
+	<a href="#" class="btn green new">Learn More</a>
+	<a href="#" class="btn lightblue new">Learn More</a>
+	<a href="#" class="btn blue new">Learn More</a>
+	<a href="#" class="btn red new">Learn More</a>
+	
+	<a href="#" class="btn line-green new">Learn More</a>
+	<a href="#" class="btn line-lightblue new">Learn More</a>
+	<a href="#" class="btn line-blue new">Learn More</a>
+	<a href="#" class="btn line-red new">Learn More</a>
+	
+	
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #f35535;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+.cd-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-header #cd-logo {
+  float: left;
+  margin: 13px 0 0 5%;
+}
+.cd-header #cd-logo img {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 70px;
+  }
+  .cd-header #cd-logo {
+    margin: 23px 0 0 5%;
+  }
+}
+
+#cd-intro {
+  position: relative;
+  height: 373px;
+  margin-top: 50px;
+  z-index: 1;
+}
+#cd-intro #cd-intro-background {
+  max-width:100%;
+  height: 875px;
+  background: url("../img/blank_cpu_test.png") no-repeat center center;
+}
+#cd-intro #cd-intro-tagline {
+  position: absolute;
+  width: 90%;
+  max-width: 1170px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#cd-intro h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  #cd-intro {
+    height: 373px;
+    margin-top: 70px;
+	width: 100%;
+  }
+  #cd-intro h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #cd-intro {
+    position: fixed;
+    /* do not overlap the header */
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 640px;
+    margin-top: 0;
+  }
+  #cd-intro h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
+.cd-content {
+  position: relative;
+  padding: 2em 0;
+  line-height: 1.6;
+  z-index: 2;
+}
+.cd-content::before {
+  /* subtle gradient right above the main content */
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+.no-cssgradients .cd-content::before {
+  /* use Modernizr to detect whether the browser supports or not css gradients */
+  display: none;
+}
+.cd-content h2 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.cd-content p {
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-content {
+    line-height: 1.8;
+  }
+  .cd-content h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-content {
+    padding: 4em 0;
+    margin-top: 570px;
+  }
+  .cd-content p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}

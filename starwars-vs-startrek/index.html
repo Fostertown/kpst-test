@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<title>Star Wars vs. Star Trek Quiz</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	
+	
+	<div id="loader"></div>
+	
+	<div class="noise">
+		<div id="bg_elements">
+			<div id="deathstar" class="randompos float_spin"></div>
+			<div id="enterprise" class="randompos forever_move"></div>
+		</div>
+		
+		<div id="intro">
+			<div class="container">
+				<h2>Are you the kind of marketer who prefers to</h2><h1><span class="orange">Use the Force</span> or <span class="orange">Engage?</span></h1>
+				<p>Find out where your content marketing falls on the Star Wars to Star Trek spectrum.</p>
+				<a class="button" id="exit_intro" href="#">Take the Quiz</a>
+			</div>
+		</div>	
+	
+		<div id="slides">
+	<!-- QUESTION 1 -->
+			<ul class="slides-container">
+				<li>
+					<div class="container">
+						<h2>Q1: Galactic vs Nuanced Themes</h2>
+						<p>Does most of your content address really big themes or do you tackle complex topics?</p>
+					
+						<input type="radio" class="wars" id="radio1" name="question1">
+						   <label for="radio1">A. We like big themes.</label>
+						<input type="radio" class="trek" id="radio2" name="question1">
+						   <label for="radio2">B. We love focused topics.</label>
+				
+						   <div class="key">
+							   <h3>Answer Key:</h3>
+							   <ul>
+									<li><b>Star Wars!</b> The dark side versus the light side. Like Star Wars, your content tends to address  broad, overarching topics.</li>
+									<li><b>Star Trek!</b> Star Trek explores a lot of specific themes (intergalactic race relations, wormholes, cultural assimilation). Just like the series, you embrace rather than shun complex concepts.</li>
+							   </ul>
+						   </div>
+					</div>
+				</li>
+	
+	<!-- QUESTION 2 -->
+				<li>
+					<div class="container">
+					<h2>Q2: Brave New World vs Forward-Thinking</h2>
+					<p>Does your content shift the audience's perspective about their current market or does it focus on where that market is headed?</p>
+				
+					<input type="radio" class="wars" id="radio3" name="question2">
+					   <label for="radio3">A. Our content changes perspectives.</label>
+					<input type="radio" class="trek" id="radio4" name="question2">
+					   <label for="radio4">B. Our content helps them stay ahead of the curve.</label>
+					   
+					   <div class="key">
+						   <h3>Answer Key:</h3>
+						   <ul>
+								<li><b>Star Wars!</b> “In a galaxy far, far away…” Your content transports the audience to a different, better world - for their business that is.</li>
+								<li><b>Star Trek!</b> It’s warp drive to the future. Your content explores futuristic topics and how to prepare for the vast unknown.</li>
+						   </ul>
+					   </div>
+					</div>
+				</li>
+	
+	<!-- QUESTION 3 -->
+				<li>
+					<div class="container">
+					<h2>Q3: Competitive Content vs Investigative Content</h2>
+					<p>Do you focus your content efforts on equipping customers to best competitors or do you spend more time exploring emerging trends and themes?</p>
+				
+					<input type="radio" class="wars" id="radio5" name="question3">
+					   <label for="radio5">A. Our content helps customers win their market.</label>
+					<input type="radio" class="trek" id="radio6" name="question3">
+					   <label for="radio6">B. Our content helps customers stay on top of emerging trends.</label>
+					   
+					   <div class="key">
+						   <h3>Answer Key:</h3>
+						   <ul>
+								<li><b>Star Wars!</b> It’s the Empire against the Rebel Alliance. Like Star Wars, your content is about beating the competition.</li>
+								<li><b>Star Trek!</b> Star Trek sought out “new life and new civilizations.” Similarly, your content likes to explore new trends and themes.</li>
+						   </ul>
+					   </div>
+					</div>
+				</li>
+	
+	<!-- QUESTION 4 -->
+				<li>
+					<div class="container">
+					<h2>Q4: Sleek vs Gritty</h2>
+					<p>When it comes to visuals, do you prefer to use super modern design or visceral true-to-life imagery?</p>
+				
+					<input type="radio" class="trek" id="radio7" name="question4">
+					   <label for="radio7">A. We like a sleek look.</label>
+					<input type="radio" class="wars" id="radio8" name="question4">
+					   <label for="radio8">B. We keep it real.</label>
+					   
+					   <div class="key">
+						   <h3>Answer Key:</h3>
+						   <ul>
+								<li><b>Star Trek!</b> Like the bridge of the Enterprise, your visual strategy follows a smooth style.</li>
+								<li><b>Star Wars!</b> Like the Millennium Falcon, your visual strategy is as real as it gets.</li>
+						   </ul>
+					   </div>
+					</div>
+				</li>
+	
+	<!-- QUESTION 5 -->
+				<li>
+					<div class="container">
+					<h2>Q5: Flat Decision-Makers vs Clear Hierarchies</h2>
+					<p>When crafting your content, do you largely target companies with a flat approach to decision-making or those with very clear organizational charts?</p>
+				
+					<input type="radio" class="wars" id="radio9" name="question5">
+					   <label for="radio9">A. Our audience takes a collaborative approach when making decisions.</label>
+					<input type="radio" class="trek" id="radio10" name="question5">
+					   <label for="radio10">B. We really want to reach the boss with purchase authority.</label>
+					   
+					   <div class="key">
+						   <h3>Answer Key:</h3>
+						   <ul>
+								<li><b>Star Wars!</b> We wouldn’t call Yoda the boss (more like a mentor). Your content is meant to reach organizations where titles mean very little.</li>
+								<li><b>Star Trek!</b> In Star Trek, you need the ear of the Captain. Your content is designed to influence the Captain - or even the Admiral - at organizations.</li>
+						   </ul>
+					   </div>
+					</div>
+				</li>
+	
+	<!-- QUESTION 6 -->
+				<li class="last">
+					<div class="container">
+					<h2>Q6: Market Forces vs Internal Challenges</h2>
+					<p>Are you more concerned with creating content that helps the audience understand and adapt to outside market forces or preparing them to deal with conflicts and challenges inside their organizations?</p>
+				
+					<input type="radio" class="trek" id="radio11" name="question6">
+					   <label for="radio11">A. Our content helps them stay ahead of the industry.</label>
+					<input type="radio" class="wars" id="radio12" name="question6">
+					   <label for="radio12">B. Our content helps them deal with internal issues.</label>
+					   
+					   <div class="key">
+						   <h3>Answer Key:</h3>
+						   <ul>
+								<li><b>Star Trek!</b> Be it “Khan!” or the Borg, Star Trek characters battle a lot of outside forces. Your content is meant to help prospects and customers overcome external, industry challenges.</li>
+								<li><b>Star Wars!</b> Anakin and Luke Skywalker both waged internal battles. Your content is really meant to help professionals overcome internal obstacles and conflicts.</li>
+						   </ul>
+					   </div>
+					</div>
+				</li>
+			   </ul>
+				<div id="results">
+					<div class="container">
+						<div id="spectrum">
+							<div class="progressbar" id="trekbar"></div>
+							<div class="progressbar" id="warsbar"></div>
+							<div class="cf"></div>
+							<div class="trek_result" style="display:none;"><h2>Star Trek</h2><p>We predict your content will live long and prosper. Your marketing has Star Trek written all over it. Engage, Captain!</p></div>
+							<div class="wars_result" style="display:none;"><h2>Star Wars</h2><p>The Force is strong with this one. Your content skews more towards the Star Wars universe. Not bad, Jedi!</p></div>
+							<div class="tie_result" style=""><h2>Tie</h2><p>Choose you must! Or maybe you don't. Your content falls right in between Star Trek and Star Wars. You're part Jedi, part Trekkie.</p></div>							
+						</div>
+
+						<div class="final_cta"><img class="ebook" src="images/ebook.png"><p class="large">You've taken our quiz. Now get your free copy of the comic book "Content: The Force That Moves the Buyer Down the Funnel"!</p><a href="http://content.kapost.com/content-the-force-ebook?id=701E0000000AaQA" target="_blank" class="button">Click Here</a></div>
+
+					</div>
+				</div>
+				<nav class="slides-navigation">
+					<a href="#" class="next">Next Question<span class="arrow"></span></a>
+					<span id="open_results" style="display:none;">View Results</span>
+				</nav>
+		</div>	
+	</div><!-- .noise END -->	
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.animate-enhanced.min.js"></script>
+	<script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/scripts.js"></script>
+	
+<!-- marketo -->
+    <script type="text/javascript">
+document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>Munchkin.init('389-IOX-111');</script>
+  <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-12328066-1', 'auto');
+ga('send', 'pageview');
+</script>
+    
+	<script type="text/javascript"></script>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* IE 7 and earlier */
+
+.container.blog {
+	padding: 50px 0 25px 0;
+}
+
+.clearFix {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+	zoom: 1; /* for IE */
+}
+
+table.pricing.full.white .contact {	
+	text-align: center;
+	padding: 20px;
+}
+
+table.pricing.full.white .contact img {	
+	display: none;
+}
+
+.container.pricing {
+	padding: 50px 0 0 0;
+	margin-bottom: -20px;
+}
+
+table.pricing.corners-top {
+	margin: -20px 0 -20px 0;
+	overflow: hidden;
+	height: 60px;
+}
+
+table.pricing.corners-top td {
+	padding: 0;
+	margin: 0 0 -20px 0;
+	overflow: hidden;
+	height: 60px;
+}
+
+table.pricing.corners-top td div {
+	padding: 25px 0 15px 0;
+}
+
+.navy table.pricing td div.margin-top-30,
+.navy table.pricing td div.margin-top-15 {
+	margin-top: 0;
+}
+
+.blue .screenshot {
+	position: relative; 
+	margin: -60px -20px -60px -20px;
+	left: 0;
+	bottom: -60px;
+}

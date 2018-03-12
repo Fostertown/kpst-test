@@ -1,0 +1,129 @@
+/* Define the base color */
+/* Common styles & typography */
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #00BFCD;
+}
+.section-heading {
+  border-color: #00BFCD;
+}
+.button,
+.tp-button {
+  background-color: #00BFCD;
+}
+.button:hover,
+.tp-button:hover {
+  background-color: #f9a510;
+}
+.bullets .active a,
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: #00BFCD;
+}
+/* Navigation */
+.navbar-toggle .icon-bar {
+  background-color: #00BFCD;
+}
+.nav li > a:hover,
+.nav li.active > a:hover,
+.nav li.active > a {
+  color: #00BFCD;
+}
+/* Featured portfolio */
+.featured .overlay {
+  background-color: #00BFCD;
+}
+.full-portfolio .fa {
+  color: #00BFCD;
+}
+/* Feature box */
+.feature-box > .fa {
+  color: #00BFCD;
+}
+/* Services */
+.service:hover .circle {
+  -webkit-box-shadow: inset #00BFCD 0 0 0 5px;
+  -moz-box-shadow: inset #00BFCD 0 0 0 5px;
+  -ms-box-shadow: inset #00BFCD 0 0 0 5px;
+  -o-box-shadow: inset #00BFCD 0 0 0 5px;
+  box-shadow: inset #00BFCD 0 0 0 5px;
+}
+.service .circle .fa {
+  color: #00BFCD;
+}
+.service .circle:before {
+  background-color: #00BFCD;
+}
+/* Testimonials */
+.testimonial .info em {
+  color: #00BFCD;
+}
+/* Facts */
+.facts .count {
+  color: #00BFCD;
+}
+/* Team */
+.team:hover {
+  background: #00BFCD;
+}
+.social a:hover {
+  color: #00BFCD;
+}
+/* Skill */
+.skill .bar .value {
+  background: #00BFCD;
+}
+/* Portfolio 
+.portfolio .overlay {
+  background: #00BFCD;
+}
+.portfolio-filter .active a {
+  background: #00BFCD;
+}*/
+/* Twitter icon */
+.twitter-icon:after {
+  background: #00BFCD;
+}
+/* Contact section */
+.address .fa {
+  color: #00BFCD;
+}
+/* Footer */
+footer {
+  background: #0e73ba;
+}
+/* Slider revolution */
+.tp-leftarrow.default:hover,
+.tp-rightarrow.default:hover,
+.tp-bullets .bullet.selected {
+  background-color: #00BFCD !important;
+}
+/* Blog section */
+.color,
+.search button,
+.side-title,
+.article .quote:before,
+.article .quote:after {
+  color: #00BFCD;
+}
+.tags li a:focus,
+.tags li a:hover,
+.tags li a:active {
+  background-color: #00BFCD;
+  border-color: #00BFCD;
+}
+.pages li.active a,
+.pages a:hover,
+.pages a:active,
+.pages a:focus {
+  border-color: #00BFCD;
+  background-color: #00BFCD;
+}
+.share-social a:hover,
+.share-social a:active,
+.share-social a:focus {
+  background-color: #00BFCD;
+  border-color: #00BFCD;
+}

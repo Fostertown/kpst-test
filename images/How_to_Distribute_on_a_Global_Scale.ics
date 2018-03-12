@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+X-WR-CALNAME:How to Distribute on a Global Scale
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+DTSTAMP:20140826T185722Z
+UID:20140826T185722Z-647149399@marudot.com
+DTSTART;TZID=America/New_York:20140916T140000
+DTEND;TZID=America/New_York:20140916T150000
+SUMMARY:How to distribute content on a global scale
+DESCRIPTION:How to distribute content on a global scale\nTuesday\, September 16th\n2:00pm EST\nDuration: 1 hour\n\nDial-In\n\nYou will be given the option to connect to audio with your computer when you join the meeting. If you have difficulties connecting\, you can use your phone:\n\nUS & Canada: 866-740-1260\nAccess Code: 3359950\n\nSupport\n\nYou can test your computer for compatibility prior to the meeting. For technical support\, please contact ReadyTalk at 800-843-9166.\n\nI look forward to speaking with you on Tuesday!\n\nYours in content\,\n\nJesse Noyes\nSenior Director of Content Marketing\, Kapost
+LOCATION:Online
+END:VEVENT
+END:VCALENDAR

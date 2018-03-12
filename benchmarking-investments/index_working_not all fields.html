@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benchmarking Your Level of Investment</title>
+  <link href="http://yui.yahooapis.com/3.5.1/build/cssreset/cssreset-min.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.pitchdeck.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</head>
+
+<body>
+<div class="deck">
+  <div class="slide slide_with_bleed" id="slide_10">
+    <div class="container zindex_9 relative">
+     <h1 class="text_purple">
+      Benchmarking Your Level of Investment</h1>
+      <p>&nbsp;</p>
+      <p class="text_blue_dark">
+      If you scored between a 3 and a 7 on the last page, then it’s time to dig a bit further and explore the
+opportunity cost of inefficient content operations. We will do this by benchmarking your current
+performance against Top Performing organizations and Efficiency Experts. This will provide a
+general basis on which you can justify the expected return on investment from optimizing content
+marketing operations.
+<p class="text_blue_dark">Naturally, the larger your team and the larger the level of investment, the greater the opportunity for cost savings and time savings on content operations investments.</p>
+</div>
+    <div class="container" style="background-color:#cccccc;">
+    <div class="row">
+    <!--row-->
+        <div class="col-md-6">
+          <p class="field-txt input_container">How many internal resources support content marketing
+efforts in your organization?</p>
+        </div>
+        <div class="col-md-6">
+        <div class="input_container">
+          <div id="square" class="right center-text">A</div>
+          <input class="with_dollar right" id="revenue_goal" name="revenue_goal" />
+          <span class="dollar right">#</span>
+        </div>
+        </div>
+        </div>
+         <!--row-->
+         <div class="row">
+        <div class="col-md-6">
+          <p class="field-txt input_container">On average what % of the time do internal resources
+spend on content creation?</p>
+        </div> 
+        <div class="col-md-6">
+        <div class="input_container">
+        <div id="square" class="right center-text">B</div>
+          <input class="with_dollar right" id="average_revenue" name="average_revenue" />
+          <span class="percent right">%</span>
+        </div>
+        </div>
+        </div>
+        
+         <!--row-->
+         <div class="row">
+         <div class="col-md-6">
+          <p class="field-txt input_container">How many hours each month do you pay for external
+resources to support content production efforts?</p>
+        </div> 
+        <div class="col-md-6">
+        <div class="input_container">
+          <div id="square" class="right center-text">C</div>
+          <input id="revenue_marketing" class="right" name="revenue_marketing" value="35" />
+          <span class="dollar right">#</span>
+        </div>
+         </div>
+         </div>
+        
+        <!--row-->
+        <div class="row">
+         <div class="col-md-6">
+          <p class="field-txt input_container">What is the average hourly rate for external resources?</p>
+        </div> 
+        <div class="col-md-6">
+        <div class="input_container">
+          <div id="square" class="right center-text">D</div>
+          <input id="conversion" class="right" name="conversion" value="2" />
+          <span class="dollar right">$</span>
+        </div>
+         </div>
+         </div>
+        
+        <!--row-->
+        <div class="row">
+         <div class="col-md-4">
+          <p class="input_container">In a typical year, how many
+of the following content
+assets are you producing?</p>
+        </div> 
+        <div class="col-md-4">
+          <ul class="lined-list">
+          <li>eBooks</li>
+          <li>Whitepapers</li>
+          <li>Case Studies</li>
+          <li>Blog Posts</li>
+          </ul>
+        </div> 
+        <div class="col-md-4">
+        <div class="input_container">
+          <span class="percent">%</span>
+          <input id="lead" name="lead" value=".25" />
+        </div>
+        </div>
+              
+       </div><!--row-->
+      </div>
+      
+      <div class="container">
+      <div class="center-text">
+      <button class="funnel_it disabled" id="funnel_it" name="funnel_it">
+          See your Results
+          <span class="arrow"></span>
+        </button>
+        <img class="dots" src="images/dots.png" /></div>
+      <div id="funnel_1">
+      <h1 text_purple>Results</h1>
+      <p>
+        <!-- formula to match ref:
+        
+        Our organization has [A] resources that support content marketing efforts. This equates to approximately
+[$60,000 x A x B] annual commitments in content production. On top of this we spend [C x D x 12] annually on
+external resources that also support our content efforts. These resources produce an average of [E ÷ A + C]
+pieces of content per year per resource versus Top Performing firms that produce an average of 2.4 pieces of
+content annually per resource. The most substantial assets we produce are [eBooks / Whitepapers] and they
+take us F days to produce. By operationalizing our content marketing efforts we can potentially improve our
+cycle time on content production by [(F-16)/F] and produce a higher volume of higher quality content with the
+same number of resources.
+
+math and fields needed/css name:
+A is just total people entered - value people
+B = %. So 95% would have to be multiplied as .95
+$60,000 x A x B -   value annual
+
+C x D x 12 -        value outsource
+E ÷ A + C   -       value resouces
+
+What ever field has the most input, that is word that would show ie: eBooks -   value media-type
+F total of all f fields -    value day-total
+days - 16 / days?  value days
+value 
+
+        
+        <div class="conversion leads">
+          <div class="value"></div>
+          <div class="label">Conversion</div>
+        </div>
+        <div class="conversion customers">
+          <div class="value"></div>
+          <div class="label">Conversion</div>
+        </div>-->
+        <div class="funnel funnel_1">
+        Our organization has [<span class="value visitors"></span>] resources that support content marketing efforts. This equates to approximately [<span class="value leads"></span>] annual commitments in content production. On top of this we spend [<span class="value customers"></span>] annually on external resources that also support our content efforts. These resources produce an average of [<span class="funnel_value"></span>] pieces of content per year per resource versus Top Performing firms that produce an average of 2.4 pieces of
+content annually per resource. The most substantial assets we produce are [eBooks / Whitepapers] and they
+take us [F total] days to produce. By operationalizing our content marketing efforts we can potentially improve our
+cycle time on content production by [<span class="value leads"></span> ] and produce a higher volume of higher quality content with the same number of resources.       
+        </div>
+        </p>
+      </div>
+
+    </div><!--container-->
+
+  </div>
+</div>
+
+<!-- marketo -->
+    <script type="text/javascript">
+document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>Munchkin.init('389-IOX-111');</script>
+  <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-12328066-1', 'auto');
+ga('send', 'pageview');
+if ($('input#revenue_goal').val != null) {
+  var e1 = parseFloat($('input[name=revenue_goal_1]').val());
+  var e2 = parseFloat($('input[name=revenue_goal_2]').val());
+  var e3 = parseFloat($('input[name=revenue_goal_3]').val());
+  var e4 = parseFloat($('input[name=revenue_goal_4]').val());
+  var sumE = $('input[name=revenue_goal_4]').val() == e1+e2+e3+e4;
+} else {
+  var sumE = $('input[name=revenue_goal_4]').val() == 0;
+}
+
+$('button#funnel_it').click(function() {
+  var a = parseFloat($('input[name=revenue_goal]').val());
+  var b = parseFloat($('input[name=average_revenue]').val());
+  var c = parseFloat($('input[name=revenue_marketing]').val());
+  var d = parseFloat($('input[name=conversion]').val());
+
+  
+
+  //var c = parseFloat(a);
+  var e = parseFloat(b) / 100;
+  var f = 60000 * c * e;
+  var g = c * d * 12;
+  var h = e / a + c;
+  console.log(a, b, c, d, e);
+  $('span.value.visitors').append(a);
+  $('span.value.leads').append(f);
+  $('span.value.customers').append(g);
+  $('span.funnel_value').append(h);
+});
+
+
+</script>
+</body>
+</html>

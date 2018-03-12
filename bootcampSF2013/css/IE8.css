@@ -1,0 +1,25 @@
+/* IE 8 and earlier */
+
+body,
+h4,
+p strong,
+li strong,
+.box strong,
+form input[type="text"],
+form input[type="email"],
+form textarea,
+.buttons a,
+.post .left a,
+.post .left span,
+.col.side a.button,
+.pagination a,
+.call-out,
+.ui-selectmenu,
+.ui-selectmenu-menu li,
+.ui-selectmenu-menu li a { 
+	font-weight: normal;
+}
+
+form#search input[type="text"]:focus {
+	width: 160px;
+}

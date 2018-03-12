@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>Kapost Style Guide</title>
+	
+        <!--custom css-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" id="x-child-css" href="http://kapost.com/wp-content/themes/x-child/style.css?ver=3.2.3" type="text/css" media="all">
+</head>
+<body>
+
+
+<style type="text/css">
+	html { background: #eee; }
+	
+	.container {
+  position: relative;
+  width: 960px;
+  margin: auto;
+  z-index: 0;
+  text-align: left;
+  padding: 70px 0;}
+  
+  .gray-bkg, .button.gray {
+  background: #efefef;
+}
+
+.clearFix {
+  zoom: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+	
+	h1.title {
+		background: #dedede;
+		border-radius: 4px;
+		padding: 10px;
+		margin-top: 40px;
+	}
+	
+	ul.logo_downloads li {
+		background-image: none !important;
+		background-color: #fff;
+		display: block;
+		float: left;
+		margin: 0 20px 20px 20px;
+		padding: 0;
+		border-radius: 4px;
+	}
+	ul.logo_downloads li.dark_bg {
+		background: #aaa;
+	}
+	
+	ul.logo_downloads a {
+		position: relative;
+		float: left;
+		color: #fff;
+		padding: 20px;
+	}
+
+	ul.logo_downloads a p {
+		position: absolute;
+		display: none;
+	}
+	
+
+	ul.logo_downloads li:hover {
+		background: #000;
+		-webkit-transition: all 0.2s ease;
+	}
+	
+	ul.logo_downloads li:hover p {
+		display: block;
+		-webkit-transition: all 0.2s ease;
+	}
+		ul.logo_downloads li:hover img {
+		opacity: 0;
+	}
+	
+	ul.colors {
+		list-style: none;
+		margin: 0 0 20px 0;
+	}
+	ul.colors li {
+		float: left;
+		display: block;
+		width: 100px;
+		height: 100px;
+		border: 1px solid #ccc;
+		margin: 5px;
+		padding: 0;
+		text-align: center;
+	}
+	ul.colors li p {
+		display: none;
+		color: #fff;
+		font-size: 18px;
+		line-height: 100px;
+	}
+	ul.colors li:hover {
+		background: #111 !important;
+		-webkit-transition: all 0.2s ease;
+	}
+	ul.colors li:hover p {
+		opacity: 1;
+		display: block;
+		-webkit-transition: all 0.2s ease;
+	}
+	/*Styles for the New Kapost.com*/
+	h1.new, h2.new, h3.new, h4.new {
+		
+		font-weight: 400;
+		color: #2f3c61;
+	}
+
+	.btn.new {
+		padding: 25px 34px 23px 34px;
+		display: block;
+		border-radius: 4px;
+		font-family:'Open Sans', Helvetica, Arial, sans-serif !important;
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		text-decoration: none;
+		float: left;
+		letter-spacing: .02em;
+		margin: 10px;
+		color: #fff;
+		transition: opacity .2s ease;
+	}
+	
+	.btn.new:hover {
+		opacity: 0.8;
+	}
+	
+	.btn.new:active {
+		opacity: 1;
+	}
+	
+	.green.new {
+		background: #00bb5c; /* Old browsers */
+		background: -moz-linear-gradient(top,  #00bb5c 0%, #00964a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00bb5c), color-stop(100%,#00964a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #00bb5c 0%,#00964a 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #00bb5c 0%,#00964a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bb5c', endColorstr='#00964a',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.red.new {
+		background: #d83333; /* Old browsers */
+		background: -moz-linear-gradient(top,  #d83333 0%, #ad2929 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d83333), color-stop(100%,#ad2929)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #d83333 0%,#ad2929 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #d83333 0%,#ad2929 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d83333', endColorstr='#ad2929',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.blue.new {
+		background: #2f3c61; /* Old browsers */
+		background: -moz-linear-gradient(top,  #2f3c61 0%, #26304e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f3c61), color-stop(100%,#26304e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #2f3c61 0%,#26304e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #2f3c61 0%,#26304e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f3c61', endColorstr='#26304e',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.lightblue.new {
+		background: #c9d7ff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #c9d7ff 0%, #a1accc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9d7ff), color-stop(100%,#a1accc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #c9d7ff 0%,#a1accc 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #c9d7ff 0%,#a1accc 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d7ff', endColorstr='#a1accc',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.line-green.new {
+		color: #00bb5c;
+		box-shadow: inset 0 0 0 3px #00bb5c;
+		background: rgba(0,187,92, 0.1);
+	}
+	
+	.line-lightblue.new {
+		color: #c9d7ff;
+		box-shadow: inset 0 0 0 3px #c9d7ff;
+		background: rgba(201,215,255, 0.1);
+	}
+	
+	.line-blue.new {
+		color: #2f3c61;
+		box-shadow: inset 0 0 0 3px #2f3c61;
+		background: rgba(47,60,97, 0.1);
+	}
+	
+	.line-red.new {
+		color: #d83333;
+		box-shadow: inset 0 0 0 3px #d83333;
+		background: rgba(216,51,51, 0.1);
+	}
+	
+</style>
+
+<section class="gray-bkg">
+ 	<div class="container">
+ 
+	
+		<h1 style="font-size: 42px;">Kapost Style Guide</h1>
+        
+        <!--make a nav here that follows to go to any section-->
+<!---->
+		<h1 class="title">Logos</h1>	
+		 
+		<p>Click to download:</p>
+		
+        <div style="height:200px;">
+		<ul class="logo_downloads">
+			<li class="dark_bg">
+				<a href="images/kapost.svg" download="kapost">
+					<p>All versions of Kapost logo in SVG format.</p>
+					<img src="images/kapost.svg" style="width: 702px; height: auto;">
+				</a>
+			</li>
+			<li>
+				<a href="images/kapost_original.png" download="kapost">
+					<p>Standard and preferred Kapost logo in PNG format.</p>
+					<img src="images/kapost_original.png">
+				</a>
+			</li>
+			<li class="dark_bg">
+				<a href="images/kapost_white.png" download="kapost_white">
+					<p>Kapost logo in PNG format for dark bg's.</p>
+					<img src="images/kapost_white.png">
+				</a>
+			</li>
+			<li class="dark_bg">
+				<a href="images/kapost_allwhite.png" download="kapost_allwhite">
+					<p>All white Kapost logo in PNG format.</p>
+					<img src="images/kapost_allwhite.png">
+				</a>
+			</li>
+			<div class="clearFix"></div>
+		</ul>
+        </div>
+<!---->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h1 class="title">Email Signatures</h1>
+
+<p>Instructions:<br>Right-click on image<br>Choose "Copy Link Address"<br>Go to G-Mail settings (gear icon in upper right corner of email)<br>Scroll down to Signature Section; click on "Insert Image" icon<br>Choose "Web Address URL", right click in field, choose "paste", click "select"<br>Return to Style page, highlight link below image, right-click, "copy"<br>Go back to G-Mail settings, click on image in signature; Click "Change"<br>Right click in "Web Address" field, select "Paste"<br>Click "Ok", then scroll to bottom of page, click "Save Changes"<br>Done!</p>
+
+<img src="http://kapost.com/style/images/Blog_Post_Signature.gif">
+<b><p>Copy this link for the image above: marketeer.kapost.com</p></br>
+<img src="http://kapost.com/style/images/Engine_Signature.gif">
+<p>Copy this link for the image above: www.kapost.com</p></br>
+<img src="http://kapost.com/style/images/Gears_Signature.gif">
+<p>Copy this link for the image above: www.kapost.com</p></br>
+<img src="http://kapost.com/style/images/Logo_Signature.gif">
+<p>Copy this link for the image above: www.kapost.com/case-studies</p></b>
+
+<!---->
+		<h1 class="title">Colors</h1>	
+
+		<p style="margin-bottom: 20px; float:left;">Print:</p>
+		<ul class="colors">
+			<li style="background: #0E73BA"><p>PMS 300</p></li>
+		</ul>
+		<div class="clearFix"></div>
+		  <p>&nbsp;</p>
+          <p>&nbsp;</p>
+		<p style="margin-top: 20px; float:left;">Web:</p>
+		<ul class="colors">
+			<li style="background: #15bdcb"><p>#15bdcb</p></li>
+			<li style="background: #406f8d"><p>#406f8d</p></li>
+			<li style="background: #0c73ba"><p>#0c73ba</p></li>
+			<li style="background: #1D2C54"><p>#1D2C54</p></li>
+			<li style="background: #f68b36"><p>#f68b36</p></li>
+			<li style="background: #EFEFEF"><p>#EFEFEF</p></li>
+			<li style="background: #a6a6a6"><p>#a6a6a6</p></li>
+            <li style="background: #707070"><p>#707070</p></li>
+            	<div class="clearFix"></div>
+		</ul>
+          <p style="margin-top: 20px; float:left;">&nbsp;</p>
+          <ul class="colors" style="height:40px; margin-left:50px;">  
+            <li style="background: #c94f8a"><p>#c94f8a</p></li>
+            <li style="background: #6976b8"><p>#6976b8</p></li>
+			<div class="clearFix"></div>
+		</ul>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  </br>
+
+		<h1 class="title">Typography</h1>	
+		
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+
+		<ul>
+			<li>Unordered list item 1</li>
+			<li>Unordered list item 2</li>
+			<li>Unordered list item 3</li>
+			<li>Unordered list item 4</li>
+		</ul>		
+		
+		<ol>
+			<li>Ordered list item 1</li>
+			<li>Ordered list item 2</li>
+			<li>Ordered list item 3</li>
+			<li>Ordered list item 4</li>
+		</ol>		
+		
+		<p>A link looks <a href="#">like this</a> within a sentence.</p>
+		
+		<p>Paragraph text looks something like this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut varius nunc, quis placerat nulla. Sed adipiscing erat vitae magna vestibulum venenatis.</p>
+	
+		<p>Paragraph text looks something like this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut varius nunc, quis placerat nulla. Sed adipiscing erat vitae magna vestibulum venenatis.</p>
+
+		<h1 class="title">New Typography</h1>	
+
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec arcu massa, blandit in congue non, auctor quis elit. Sed fermentum interdum urna, ut sodales lacus imperdiet ac. Ut sit amet sapien at magna auctor faucibus. Mauris purus velit, auctor at massa eget, elementum venenatis sem. Fusce nec nunc sed libero iaculis fringilla commodo nec enim. Fusce hendrerit pretium diam, at dictum orci vulputate in. </p>
+        
+		<h1 class="title">Buttons</h1>
+		<a class="static-btn md cta-button-orange" href="#" title="click here">Click Here</a>
+        <a class="static-double-btn md cta-button-orange" href="#" title="click here">Learn More<br>about Kapost</a>
+		<a class="static-btn md cta-button-magneta" href="#" title="click here">Click Here</a>
+        <a class="static-btn md cta-button-purple" href="#" title="click here">Click Here</a>
+		<a class="static-btn md cta-button-navy" href="#" title="click here">Click Here</a>
+		<a class="static-btn md cta-button-blue" href="#" title="click here">Click Here</a>
+		<a class="static-btn md cta-button-teal" href="#" title="click here">Click Here</a>
+		<a class="static-btn md cta-button-grey" href="#" title="click here">Click Here</a>
+        <a class="static-btn md cta-button-dark-grey" href="#" title="click here">Click Here</a>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<div class="clearFix"></div>	
+		<div class="clearFix"></div>	
+      
+    <h1 class="title">Fonts</h1>
+    <h2>Old H2's and Old Body Copy use <a href="http://kapost.com/style/images/Centrale_FontFamily.zip" download>Centrale</a></h1>
+    <h2>New Headings and Body Copy use <a href="http://kapost.com/style/images/OpenSans-FontFamily.zip" download>Open Sans</a></h1>
+	<div class="clearFix"></div>	
+	</div> <!-- .container END -->
+</section>	
+	
+</body>
+</html>

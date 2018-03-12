@@ -1,0 +1,144 @@
+/* Selectmenu
+----------------------------------*/
+.ui-selectmenu {  
+	position: relative; 
+	overflow: hidden; 
+	zoom: 1;
+	display: block;
+	display: inline-block;
+	height: 48px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	border: none;
+	font: bold 17px/50px Centrale, arial, sans-serif;
+	color: #85bddc;
+	background: #0084c5 url('../media/icon_select.png') no-repeat 325px -21px;
+	text-decoration: none;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	-webkit-transition: background-color .2s ease, color .2s ease, width .2s ease;	
+	-moz-transition: background-color .2s ease, color .2s ease, width .2s ease;				
+	-o-transition: background-color .2s ease, color .2s ease, width .2s ease;						
+	transition: background-color .2s ease, color .2s ease, width .2s ease;		
+ }
+ 
+form#form38 span.ui-selectmenu-status,
+form#form37 span.ui-selectmenu-status {
+ 	padding: 0 15px;
+ }
+ 
+.ui-selectmenu.ui-state-hover,
+.ui-selectmenu.ul-state-active,
+.ui-selectmenu.ul-state-active a,
+.ui-selectmenu.ul-state-active a:hover {
+	background-position: 325px 19px;
+	text-decoration: none;
+
+	color: #333;
+	outline: none;
+	background-color: #fff;	
+
+	-webkit-transition: background-color .2s ease, color .2s ease, width .2s ease;	
+	-moz-transition: background-color .2s ease, color .2s ease, width .2s ease;				
+	-o-transition: background-color .2s ease, color .2s ease, width .2s ease;						
+	transition: background-color .2s ease, color .2s ease, width .2s ease;	
+}	
+ 
+.ui-selectmenu-icon { 
+	position:absolute; 
+	right:6px; 
+	margin-top:-8px; 
+	top: 50%; 
+}
+
+.ui-selectmenu-menu { 
+	padding:0; margin:0; 
+	position:absolute; 
+	top: 0; 
+	display: none; 
+	z-index: 1005; /* z-index: 1005 to make selectmenu work with dialog */
+} 
+
+.ui-selectmenu-menu ul {
+	width: 350px; 
+	padding:0; margin:0; 
+	list-style:none; 
+	position: relative; 
+	overflow: auto; 
+	overflow-y: auto; 
+	overflow-x: hidden; 
+	-webkit-overflow-scrolling: touch;
+}
+
+.ui-selectmenu-open { 
+	display: block; 
+	background: #0084c5;
+}
+
+ul.ui-selectmenu-menu-popup { 
+	margin-top: -1px; 
+}
+
+.ui-selectmenu-menu li { 
+	width: 350px;
+	color: #85bddc;
+	font: bold 17px/36px Centrale, arial, sans-serif;
+	margin:0; 
+	display: block; 
+	border-top: 1px dotted transparent; 
+	border-bottom: 1px dotted transparent; 
+	border-right-width: 0 !important;
+	border-left-width: 0 !important; 
+}
+
+.ui-selectmenu-menu li a { 
+	width: 320px;
+	padding: 0 15px;
+	font: bold 17px/36px Centrale, arial, sans-serif;
+	color: #85bddc;
+	display: block; 
+	outline:none; 
+	text-decoration:none; 
+}
+
+.ui-selectmenu-menu li.ul-state-hover a,
+.ui-selectmenu-menu li a:hover,
+a.ui-selectmenu:hover {
+	color: #333;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.ui-selectmenu-menu li.ui-state-disabled a, 
+.ui-state-disabled { 
+	cursor: default; 
+}
+
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+.ui-selectmenu-hasIcon .ui-selectmenu-status { 
+	position: relative; 
+}
+
+.ui-selectmenu-menu li .ui-icon, 
+.ui-selectmenu-status .ui-icon { 
+	position: absolute; 
+	top: 1em; 
+	margin-top: -8px; 
+	left: 0; 
+}
+
+
+.ui-selectmenu-menu li span,
+.ui-selectmenu-status span { 
+	display:block; 
+	margin-bottom: .2em; 
+}
+
+/* IE6 workaround (dotted transparent borders) */
+* html .ui-selectmenu-menu li { border-color: pink; filter:chroma(color=pink); width:100%; }
+* html .ui-selectmenu-menu li a { position: relative }
+/* IE7 workaround (opacity disabled) */
+*+html .ui-state-disabled, *+html .ui-state-disabled a { color: silver; }
